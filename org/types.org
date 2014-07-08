@@ -3,22 +3,22 @@
 * Block Types
 ** Structural primitives
    A microblock can contain the following structural primitives.
-   - ports file:img/parts/microblock_port.png
+   - ports [[file:img/parts/microblock_port.png]]
 
      Ports give access to the data that the microblock processes.
-   - input-triggers file:img/parts/microblock_trigger_in.png
+   - input-triggers [[file:img/parts/microblock_trigger_in.png]]
 
      Firing input-triggers causes the microblock to execute its functionality.
-   - output-triggers file:img/parts/microblock_trigger_out.png
+   - output-triggers [[file:img/parts/microblock_trigger_out.png]]
 
      Output-triggers allow the microblocks to fire input-triggers of other microblocks.
-   - configuration values file:img/parts/microblock_config.png
+   - configuration values [[file:img/parts/microblock_config.png]]
 
      Configuration values allow a microblock to have its behaviour adapted externally.
      'Externally', in the previous sentence can mean different things.
      Configuration values can be adapted changed by other blocks, or by a an overview tool.
      The changes can be made *during* execution.
-   - metadata file:img/parts/microblock_meta-data.png.
+   - metadata [[file:img/parts/microblock_meta-data.png]]
      The metadata represents the formal semantics of the microblock. It consists of the following three values.
      - meta model UID: 
        the identifier of the meta model, or Domain-Specific Language (“DSL”), that has been used to model the microblock.
