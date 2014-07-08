@@ -1,0 +1,17 @@
+** Spelling
+
+** Abbreviations
+#+CAPTION: Basic abbreviations
+#+ATTR_HTML: :border 2 :rules all :frame border
+|--------+-------------------|
+| cblock | Computation block |
+| iblock | Interaction block |
+| sblock | Scheduling block  |
+|--------+-------------------|
+*** Extensions
+#+CAPTION: Extension abbreviations
+#+ATTR_HTML: :border 2 :rules all :frame border
+|------+------|
+| .USC | TODO |
+| .BLX | TODO |
+|------+------|
