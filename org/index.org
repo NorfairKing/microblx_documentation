@@ -1,11 +1,32 @@
 * Microblx Documentation
 [[file:img/generic-microblock.png]]
 ** [[file:types.org][Block Types]]
-** Implementations
 ** Spelling and abbreviations
 ** Why microblx
 ** What do microblx provide
 ** Repositories
-*** kmarkus/microblx
+*** Implementations
+    - [[github.com/kmarkus/microblx][markus' microblx]]
+      - [[github.com/haianos/microblx][Enja's fork]] 
+      - [[github.com/NorfairKing/microblx][Tom's fork]] 
+    - [[github.com/shakhimardanov/microblx_and_examples][shakhimardanov]]
 *** Useful blocks
+    - [[github.com/haianos/microblx_std_triggers][Standard_triggers]]
+    - [[github.com/haianos/ubx_std_sched][Standard schedulers]]
+    - [[github.com/haianos/microblx_std_random][Random generator block]]
+    - [[github.com/haianos/microblx_cartesiangen][KDL CartesianGenerator]]
+    - [[github.com/haianos/microblx_rml_trajgen][Reflexxes Trajectory Generator]]
+    - [[github.com/ejans/hdf5_logging][HDF5 logger]] 
+*** Useful types
+    - [[github.com/haianos/microblx_kdl_types][KDL_types]]
+*** Examples
+    - [[github.com/maccradar/ubx][Tutorials and examples]]
+    - [[github.com/ejans/internal_iblock_example][Internal_iblock_example]]
 *** Bridges
+*** Other
+    - [[github.com/haianos/microblx_youbot][YouBot blocks (drivers and not only) for the microblx framework]]  
+    - [[github.com/ejans/script_ubx][Scripts]]
+    - [[github.com/haianos/microblx_cmake][Microblx_cmake]]  
+** Further documentation
+    - [[people.mech.kuleuven.be/~bruyninc/ubx/ubx-metamodel.html][metamodel]]
+    - [[people.mech.kuleuven.be/~bruyninc/ubx/ubx-rationale.html][rationale]]
