@@ -1,3 +1,16 @@
 * Microblx Documentation
 
 This repository contains documentation for the microblx metamodel.
+
+The documentation can be viewed directly on github via the org directory.
+You can start at [[https://github.com/NorfairKing/microblx_documentation/blob/master/org/index.org][the index]].
+
+It can also be converted to html code using the makefile.
+Just run the following command to generate the html code. It will then be available in the public_html directory.
+#+BEGIN_EXAMPLE
+make
+#+END_EXAMPLE
+If ever you add any svg pictures in the illustrations directory, you must run the following command to use it in the documentation.
+#+BEGIN_EXAMPLE
+make images
+#+END_EXAMPLE

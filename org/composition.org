@@ -14,7 +14,7 @@ To explain this, the concept of a link must be made explicit.
    This connection allows the cblock to access the data in the iblock *through* the port.
    Connections can be made between the following parts of blocks.
    - Between two ports (from a cblock to an iblock).
-   - Between a port and a configuration value
+   - Between a port (of a cblock) and a configuration value
    - Between an output-trigger and an input-trigger
    These links are called 'valid'. Any other kinds of links are called 'invalid'
    Note that connections are *one*-directional.
@@ -25,3 +25,15 @@ To explain this, the concept of a link must be made explicit.
    file:img/generic/composition.png
 
 ** Composition to form a new block
+   A composition can also form a new block. This is where the power of microblocks comes from.
+   The inner, unconnected ports of the composition are then viewed as outer ports of a greater block.
+   The previous example can be made into a new block like in the following diagram.
+   #+CAPTION: A generic composition block example
+   file:img/generic/composition_block.png
+
+   The resulting block happens to be a cblock.
+   The 'links' that connect the internal blocks to the external structural primitives are quite different from the internal links.
+   They are not a connection like the internal links. 
+   They just mean that when another block connects to the external structure,
+   it is really just connecting to the appropriate internal structure. 
+   
