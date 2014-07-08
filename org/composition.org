@@ -45,7 +45,7 @@ To explain this, the concept of a link must be made explicit.
 
     When defining a composite block, it is not possible to define any functionality inbetween the internal triggering of the first block and the external triggering.
     A composition is called 'pure' for exactly this reaso
-** An exammple
+** An example
    As an example, we will define a composite microblock that generates random bits using a LFSR (Linear Feedback Shift Register)
 
    A lineair feedback register is depicted in the traditional data flow way as illustrated by the following diagram.
