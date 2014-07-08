@@ -1,5 +1,5 @@
 * Microblx Documentation
-file:img/generic/microblock-generic.png
+[[file:img/generic/microblock-generic.png]]
 ** [[file:types.org][Block Types]]
 ** [[file:composition.org][Composition]]
 ** [[file:spelling.org][Spelling and abbreviations]]
