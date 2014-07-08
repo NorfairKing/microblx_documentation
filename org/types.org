@@ -1,37 +1,70 @@
 [[file:index.org][Back to index]]
-** Block Types
-*** Generic block
-    #+CAPTION: A generic microblock
-    [[file:img/generic-microblock.png]]
 
-    A generic block is obtained by composing cblocks, iblocks and sblocks.
-    A composite block can also just be a new clock, iblock or sblock.
-*** Computation block (cblock)
-    A cblock represents *computational* behaviour, i.e., functions.
-    A cblock can have all above mentioned structured primitives, except output triggers.
-**** Examples
-     - a low-pass filter
-     - a Singular Value Decomposition. 
-*** Interaction block (iblock)
-    #+CAPTION: An i-block
-    [[file:img/microblock-iblock.png]]
+* Block Types
+** Generic block
+   #+CAPTION: A generic microblock
+   [[file:img/generic/microblock-generic.png]]
+   
+   A generic microblock contains the following structural primitives.
+   - ports file:img/parts/microblock_port.png
+     
+     Ports give access to the data that the microblock processes.
 
-    An iBlock represents constraints between the data involved in cblock interactions.
-    Access to that data takes place through the data port structural primitive, by means of read() and write() functions.
-    In addition to data ports, an iblock also has configuration values and semantic identifiers.
-**** Examples
-     - a memory buffer
-     - a road map. 
-*** Scheduling block (s-Block)
-    #+CAPTION: An s-block
-    [[file:img/microblock-sblock.png]]
 
-    An sBlock represents constraints on the sequencing of cblock computations.
-    Activation of (internal and/or external) computations is available via (one or more) trigger ports, by means of trigger() functions.
-    In addition to trigger ports, an sblock also has configuration values and semantic identifiers.
-**** Examples
-     - a for loop and other iterators
-     - rule-based function call scheduling. 
+   - input-triggers file:img/parts/microblock_trigger_in.png
+
+     Firing input-triggers causes the microblock to start working.
+
+
+   - output-triggers file:img/parts/microblock_trigger_out.png
+
+     Output-triggers allow the microblocks to fire input-triggers of other microblocks.
+
+
+   - configuration values file:img/parts/microblock_config.png
+
+     Configuration values allow a microblock to have its behaviour adapted externally.
+
+
+   - metadata file:img/parts/microblock_meta-data.png.
+
+     The metadata represents the formal semantics of the microblock. It consists of the following three values.
+     - meta model UID: the identifier of the meta model, or Domain-Specific Language (“DSL”), that has been used to model the microblock.
+     - model UID: the identifier of the concrete model that describes the semantic meaning of the microblock, and that uses the above-mentioned meta model as its language.
+     - realisation UID: the identifier of this particular realisation of the above-mentioned model. The same model can, indeed, be realised multiple times, and it is necessary to be able to differentiate between these instances. 
+
+
+   A generic block is obtained by composing cblocks, iblocks and sblocks.
+   A composite block can also just be a new clock, iblock or sblock.
+** Computation block (cblock)
+   #+CAPTION: A generic cblock
+   [[file:img/generic/cblock.png]]
+   
+   A cblock represents *computational* behaviour, i.e., functions.
+   A cblock can have all above mentioned structured primitives, except output triggers.
+*** Examples
+    - a low-pass filter
+    - a Singular Value Decomposition. 
+** Interaction block (iblock)
+   #+CAPTION: A generic iblock
+   [[file:img/generic/iblock.png]]
+
+   An iBlock represents constraints between the data involved in cblock interactions.
+   Access to that data takes place through the data port structural primitive, by means of read() and write() functions.
+   In addition to data ports, an iblock also has configuration values and semantic identifiers.
+*** Examples
+    - a memory buffer
+    - a road map. 
+** Scheduling block (s-Block)
+   #+CAPTION: A generic s-block
+   [[file:img/generic/sblock.png]]
+
+   An sBlock represents constraints on the sequencing of cblock computations.
+   Activation of (internal and/or external) computations is available via (one or more) trigger ports, by means of trigger() functions.
+   In addition to trigger ports, an sblock also has configuration values and semantic identifiers.
+*** Examples
+    - a for loop and other iterators
+    - rule-based function call scheduling. 
 ** Cardinalities
    #+CAPTION: Cardinalities of structurale primitives for blocks.
    #+ATTR_HTML: :border 2 :rules all :frame border

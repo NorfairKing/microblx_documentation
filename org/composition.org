@@ -1,0 +1,10 @@
+[[file:index.org][Back to index]]
+* Microblock composition
+Microblocks can be, and are supposed to be composed.
+To explain this, the concept of a link must be made explicit.
+** Links
+   A link between two ports represents a connection between the ports.
+   The connection, however, has nothing to do with networking.
+   There is no 'flow' of data. Data remains in the iblocks and can be *accessed* by cblocks via connected ports.
+   As an example, look at the following block composition.
+   file:img/generic/link.png
