@@ -1,9 +1,11 @@
 * Microblx Documentation
 [[file:img/generic-microblock.png]]
-** MetaModel
-** Model
-*** [[file:types.org][Block Types]]
-** Implementation
-
-
-
+** [[file:types.org][Block Types]]
+** Implementations
+** Spelling and abbreviations
+** Why microblx
+** What do microblx provide
+** Repositories
+*** kmarkus/microblx
+*** Useful blocks
+*** Bridges
