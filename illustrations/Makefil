@@ -1,9 +1,0 @@
-SVG_FILES = $(shell find ./ -type f -name '*.svg')
-PNG_FILES = $(patsubst ./%.svg, ../org/img/%.png, $(MP3_FILES))
-
-.PHONY: all
-all: $(MP3_FILES)
-
-../img/%.png: ./%.flac
-    @mkdir -p "$(@D)"
-    @echo convert "$<" to "$@"

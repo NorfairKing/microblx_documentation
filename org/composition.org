@@ -34,6 +34,36 @@ To explain this, the concept of a link must be made explicit.
    The resulting block happens to be a cblock.
    The 'links' that connect the internal blocks to the external structural primitives are quite different from the internal links.
    They are not a connection like the internal links. 
-   They just mean that when another block connects to the external structure,
-   it is really just connecting to the appropriate internal structure. 
-   
+*** Connecting the dots
+    When connecting the internal ports to ports of the composite, a lot is possible.
+    It is enough to remember that such a 'connection' just means: "use the internal port instead".
+    It is *not* like an inter-block link.
+
+    - Internal config values either need to be connected to external config values *or* they need to be set when defining the composition.
+    - When defining a compotition with an input trigger, the input trigger of the composition needs to be connected to the input trigger of an internal block.
+    - Any internal 'loose' ports, need to either be connected to external ports, *or* not be connected at all, in which case they don't have any effect.
+
+    When defining a composite block, it is not possible to define any functionality inbetween the internal triggering of the first block and the external triggering.
+    A composition is called 'pure' for exactly this reaso
+** An exammple
+   As an example, we will define a composite microblock that generates random bits using a LFSR (Linear Feedback Shift Register)
+
+   A lineair feedback register is depicted in the traditional data flow way as illustrated by the following diagram.
+   #+CAPTION: An LFSR in a traditional data flow diagram.
+   [[file:img/lfsr_traditional.png]]
+
+   When simply translating the traditional data flow way of thinking into a microblocks composition, one might end up with something like this.
+   (The meta-data ports are not depicted for simplicity sake.)
+   #+CAPTION: An LFSR in microblocks, the wrong way.
+   [[file:img/compositions/c_lfsr_bad_.png]]
+  
+   As you can see, this composition will have the effect that the data-flow diagram is trying to explain.
+   It is, however, a *bad* example of how microblx compositions are supposed to work.
+   There is still data 'flowing' between different data structures.
+   Every bit gets its own iblock, which is 'overkill'.
+   We can put every bit in the same data structure and redefine the composition to contain only one cblock and one iblock as follows.
+   #+CAPTION: An LFSR in microblocks, the good way.
+   [[file:img/compositions/c_lfsr.png]]
+
+   In this composition, the iblock contains the register and its bits. The cblock then generates the bits like the data-flow diagram shows.
+   This way, no data is moved between blocks unnecessarily and all computation is contained within a cblock.
