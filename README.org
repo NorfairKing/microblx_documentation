@@ -3,7 +3,7 @@
 This repository contains documentation for the microblx metamodel.
 
 The documentation can be viewed directly on github via the org directory.
-You can start at [[https://github.com/NorfairKing/microblx_documentation/blob/master/org/index.org][the index]].
+You can start at [[https://github.com/NorfairKing/microblx_documentation/blob/master/org/index.org][the index]]. Note that links between the files will not work on github, only when you generate the html code.
 
 ** Generating the html
 The documentation can also be used to generate html code using the makefile.
