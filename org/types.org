@@ -3,59 +3,43 @@
 *** Generic block
     #+CAPTION: A generic microblock
     [[file:img/generic-microblock.png]]
-**** Cardinalities
-     - 0..* *(data) ports*
-     - 0..* *trigger (ports)*
-       - 0..1 input triggers
-       - 0..* output triggers
-     - 0..* *configuration values*
-     - 3..3 *identifier ports*
-       - 1..1 meta model UID
-       - 1..1 model UID
-       - 1..1 realisation UID
-*** Computation block (C-Block)
-    A C-Block represents computational behaviour, i.e., functions, and that has all above-mentioned structural primitives.
-**** Cardinalities
-     - 0..* (data) ports
-     - *1..1* trigger (ports)
-       - *1..1* input triggers
-       - *0..0* output triggers
-     - 0..* configuration values
-     - 3..3 identifier ports
+
+    A generic block is obtained by composing cblocks, iblocks and sblocks.
+    A composite block can also just be a new clock, iblock or sblock.
+*** Computation block (cblock)
+    A cblock represents *computational* behaviour, i.e., functions.
+    A cblock can have all above mentioned structured primitives, except output triggers.
 **** Examples
      - a low-pass filter
      - a Singular Value Decomposition. 
-*** Interaction block (I-Block)
+*** Interaction block (iblock)
     #+CAPTION: An i-block
     [[file:img/microblock-iblock.png]]
 
-    An I-Block represents constraints between the data involved in cblock interactions.
+    An iBlock represents constraints between the data involved in cblock interactions.
     Access to that data takes place through the data port structural primitive, by means of read() and write() functions.
     In addition to data ports, an iblock also has configuration values and semantic identifiers.
-**** Cardinalities
-     - 0..* (data) ports
-     - *0..0* trigger (ports)
-       - *0..0* input triggers
-       - *0..0* output triggers
-     - 0..* configuration values
-     - 3..3 identifier ports
 **** Examples
      - a memory buffer
      - a road map. 
-*** Scheduling block (S-Block)
+*** Scheduling block (s-Block)
     #+CAPTION: An s-block
     [[file:img/microblock-sblock.png]]
 
-    An S-Block represents constraints on the sequencing of cblock computations.
+    An sBlock represents constraints on the sequencing of cblock computations.
     Activation of (internal and/or external) computations is available via (one or more) trigger ports, by means of trigger() functions.
     In addition to trigger ports, an sblock also has configuration values and semantic identifiers.
-**** Cardinalities
-     - *0..0* (data) ports
-     - *1..** trigger (ports)
-       - *1..1* input triggers
-       - *0..** output triggers
-     - 0..* configuration values
-     - 3..3 identifier ports
 **** Examples
      - a for loop and other iterators
      - rule-based function call scheduling. 
+** Cardinalities
+   #+CAPTION: Cardinalities of structurale primitives for blocks.
+   #+ATTR_HTML: :border 2 :rules all :frame border
+|---------------+-------------+--------------+-----------------+----------------+-----------------+----------------------+------------------|
+|               | Purpose     | (data) ports | trigger (ports) | input-triggers | output-triggers | Configuration values | identifier ports |
+|---------------+-------------+--------------+-----------------+----------------+-----------------+----------------------+------------------|
+| generic block | Composition | 0..*         | 0..*            | 0..1           | 0..*            | 0..*                 |             3..3 |
+| cblock        | Computation | 0..*         | *1..1*          | *1..1*         | *0..0*          | 0..*                 |             3..3 |
+| iblock        | Data        | 0..*         | *0..0*          | *0..0*         | *0..0*          | 0..*                 |             3..3 |
+| sblock        | Scheduling  | *0..0*       | *1..**          | *1..1*         | *0..**          | 0..*                 |             3..3 |
+|---------------+-------------+--------------+-----------------+----------------+-----------------+----------------------+------------------|

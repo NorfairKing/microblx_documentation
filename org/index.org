@@ -2,8 +2,8 @@
 [[file:img/generic-microblock.png]]
 ** [[file:types.org][Block Types]]
 ** [[file:spelling.org][Spelling and abbreviations]]
-** Why microblx
-** What do microblx provide
+** [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-metamodel.html][Why microblx?]]
+** [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-rationale.html][What do microblx provide?]]
 ** Repositories
 *** Implementations
     - [[http://github.com/kmarkus/microblx][markus' microblx]]
@@ -27,6 +27,5 @@
     - [[http://github.com/haianos/microblx_youbot][YouBot blocks (drivers and not only) for the microblx framework]]  
     - [[http://github.com/ejans/script_ubx][Scripts]]
     - [[http://github.com/haianos/microblx_cmake][Microblx cmake]]  
-** Further documentation
-    - [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-metamodel.html][Microblx metamodel]]
-    - [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-rationale.html][Mircoblx rationale]]
+** FAQ
+      
