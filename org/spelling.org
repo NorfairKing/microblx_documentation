@@ -1,5 +1,16 @@
-** Spelling
+[[file:index.org][Back to index]]
+** Naming and Spelling
+The metamodel is called 'Microblx'.
+It's not called Microblocks, Microblcks, ublcks or anything alongs those lines.
 
+The standard implementation is called 'ubx'.
+The 'u' is an ASCII version of the greek µ for 'micro'.
+
+
+*** Blocks
+    A microblock is anything conforming to the generic microblock meta-model.
+
+    A cblock, iblock or sblock is defined as any microblock conforming to the respective cblcok, iblock or sblock meta-model.
 ** Abbreviations
 #+CAPTION: Basic abbreviations
 #+ATTR_HTML: :border 2 :rules all :frame border

@@ -21,7 +21,7 @@
     - [[http://github.com/haianos/microblx_kdl_types][KDL types]]
 *** Examples
     - [[http://github.com/maccradar/ubx][Tutorials and examples]]
-    - [[http://github.com/ejans/internal_iblock_example][Internal_iblock_example]]
+    - [[http://github.com/ejans/internal_iblock_example][Internal iblock example]]
 *** Bridges
 *** Other
     - [[http://github.com/haianos/microblx_youbot][YouBot blocks (drivers and not only) for the microblx framework]]  
