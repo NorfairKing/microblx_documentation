@@ -7,4 +7,21 @@ To explain this, the concept of a link must be made explicit.
    The connection, however, has nothing to do with networking.
    There is no 'flow' of data. Data remains in the iblocks and can be *accessed* by cblocks via connected ports.
    As an example, look at the following block composition.
+   #+CAPTION: A generic link example
    file:img/generic/link.png
+
+   The connection between the port of the iblock and the port of the cblock is called a link.
+   This connection allows the cblock to access the data in the iblock *through* the port.
+   Connections can be made between the following parts of blocks.
+   - Between two ports (from a cblock to an iblock).
+   - Between a port and a configuration value
+   - Between an output-trigger and an input-trigger
+   These links are called 'valid'. Any other kinds of links are called 'invalid'
+   Note that connections are *one*-directional.
+** Composition
+   A composition is defined as the combination of microblocks with valid links.
+   The following diagram provides an example of what a composition could look like.
+   #+CAPTION: A generic composition example
+   file:img/generic/composition.png
+
+** Composition to form a new block

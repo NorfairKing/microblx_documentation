@@ -7,27 +7,18 @@
    
    A generic microblock contains the following structural primitives.
    - ports file:img/parts/microblock_port.png
-     
+
      Ports give access to the data that the microblock processes.
-
-
    - input-triggers file:img/parts/microblock_trigger_in.png
 
      Firing input-triggers causes the microblock to start working.
-
-
    - output-triggers file:img/parts/microblock_trigger_out.png
 
      Output-triggers allow the microblocks to fire input-triggers of other microblocks.
-
-
    - configuration values file:img/parts/microblock_config.png
 
      Configuration values allow a microblock to have its behaviour adapted externally.
-
-
    - metadata file:img/parts/microblock_meta-data.png.
-
      The metadata represents the formal semantics of the microblock. It consists of the following three values.
      - meta model UID: the identifier of the meta model, or Domain-Specific Language (“DSL”), that has been used to model the microblock.
      - model UID: the identifier of the concrete model that describes the semantic meaning of the microblock, and that uses the above-mentioned meta model as its language.
