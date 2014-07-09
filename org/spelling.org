@@ -1,7 +1,7 @@
 [[file:index.org][Back to index]]
 ** Naming and Spelling
-The metamodel is called 'Microblx'.
-It's not called Microblocks, Microblcks, ublcks or anything alongs those lines.
+The metamodel is called 'microblx'.
+It's not called Microblocks, microblcks, ublcks or anything alongs those lines.
 
 The standard implementation is called 'ubx'.
 The 'u' is an ASCII version of the greek µ for 'micro'.

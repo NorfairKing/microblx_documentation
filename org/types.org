@@ -62,7 +62,7 @@
    [[file:img/generic/microblock-generic.png]]
    
    A generic block is obtained by composing cblocks, iblocks and sblocks.
-   A composite block can also just be a new clock, iblock or sblock.
+   A composite block can also just be a new cblock, iblock or sblock.
 ** Cardinalities
    #+CAPTION: Cardinalities of structurale primitives for blocks.
    #+ATTR_HTML: :border 2 :rules all :frame border

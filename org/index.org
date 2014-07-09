@@ -1,4 +1,4 @@
-* Microblx Documentation
+* microblx documentation
 To get an idea of what microblx is, have a look at the [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-rationale.html][meta-model]].
 If anything is still unclear, you can look at the following clarifications.
    - [[file:types.org][Block Types]]
@@ -7,7 +7,7 @@ If anything is still unclear, you can look at the following clarifications.
 ** Repositories
 *** Implementations
     - [[http://github.com/kmarkus/microblx][markus' microblx]]
-      - [[http://github.com/haianos/microblx][Enja's fork]] 
+      - [[http://github.com/haianos/microblx][Enea's fork]] 
       - [[http://github.com/NorfairKing/microblx][Tom's fork]] 
     - [[http://github.com/shakhimardanov/microblx_and_examples][shakhimardanov]]
 *** Useful blocks
@@ -26,6 +26,7 @@ If anything is still unclear, you can look at the following clarifications.
 *** Other
     - [[http://github.com/haianos/microblx_youbot][YouBot blocks (drivers and not only) for the microblx framework]]  
     - [[http://github.com/ejans/script_ubx][Scripts]]
-    - [[http://github.com/haianos/microblx_cmake][Microblx cmake]]  
+    - [[http://github.com/haianos/microblx_cmake][microblx cmake]]  
 
       
+    
