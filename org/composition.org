@@ -17,7 +17,7 @@ To explain this, the concept of a link must be made explicit.
    - Between a port (of a cblock) and a configuration value
    - Between an output-trigger and an input-trigger
    These links are called 'valid'. Any other kinds of links are called 'invalid'.
-   Note that connections are *one*-directional.
+
 ** Composition
    A composition is defined as the combination of microblocks with valid links.
    The following diagram provides an example of what a composition could look like.
