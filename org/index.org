@@ -1,5 +1,4 @@
 * Microblx Documentation
-[[file:img/generic/microblock-generic.png]]
 To get an idea of what microblx is, have a look at the [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-rationale.html][meta-model]].
 If anything is still unclear, you can look at the following clarifications.
    - [[file:types.org][Block Types]]
