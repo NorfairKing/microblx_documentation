@@ -23,7 +23,7 @@ The 'u' is an ASCII version of the greek µ for 'micro'.
 *** Extensions
 #+CAPTION: Extension abbreviations
 #+ATTR_HTML: :border 2 :rules all :frame border
-|------+------|
-| .USC | TODO |
-| .BLX | TODO |
-|------+------|
+|------+-------------------------------|
+| .USC | Microblock System Composition |
+| .BLX | Block Model                   |
+|------+-------------------------------|
