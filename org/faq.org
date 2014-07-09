@@ -1,2 +1,8 @@
 * Frequently asked questions
-None yet
+** Why should I use Microblx?
+   Have a look at the [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-metamodel.html][rationale]].
+** What do Microblx provide?
+   Have a look at the [[http://people.mech.kuleuven.be/~bruyninc/ubx/ubx-rationale.html][meta-model]].
+** I've seen multiple ways to spell the name of these blocks, which one is correct?
+   Not to be a prescriptivist, but have a look at the [[file:spelling.org][Spelling and abbreviations]] article.
+   
