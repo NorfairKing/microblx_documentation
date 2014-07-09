@@ -16,7 +16,7 @@ To explain this, the concept of a link must be made explicit.
    - Between two ports (from a cblock to an iblock).
    - Between a port (of a cblock) and a configuration value
    - Between an output-trigger and an input-trigger
-   These links are called 'valid'. Any other kinds of links are called 'invalid'
+   These links are called 'valid'. Any other kinds of links are called 'invalid'.
    Note that connections are *one*-directional.
 ** Composition
    A composition is defined as the combination of microblocks with valid links.
@@ -40,15 +40,15 @@ To explain this, the concept of a link must be made explicit.
     It is *not* like an inter-block link.
 
     - Internal config values either need to be connected to external config values *or* they need to be set when defining the composition.
-    - When defining a compotition with an input trigger, the input trigger of the composition needs to be connected to the input trigger of an internal block.
+    - When defining a composition with an input trigger, the input trigger of the composition needs to be connected to the input trigger of an internal block.
     - Any internal 'loose' ports, need to either be connected to external ports, *or* not be connected at all, in which case they don't have any effect.
 
     When defining a composite block, it is not possible to define any functionality inbetween the internal triggering of the first block and the external triggering.
-    A composition is called 'pure' for exactly this reaso
+    A composition is called 'pure' for exactly this reason.
 ** An example
-   As an example, we will define a composite microblock that generates random bits using a LFSR (Linear Feedback Shift Register)
+   As an example, we will define a composite microblock that generates random bits using a LFSR (Linear Feedback Shift Register).
 
-   A lineair feedback register is depicted in the traditional data flow way as illustrated by the following diagram.
+   A linear feedback register is depicted in the traditional data flow way as illustrated by the following diagram.
    #+CAPTION: An LFSR in a traditional data flow diagram.
    [[file:img/lfsr_traditional.png]]
 

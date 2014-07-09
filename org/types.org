@@ -16,7 +16,7 @@
 
      Configuration values allow a microblock to have its behaviour adapted externally.
      'Externally', in the previous sentence can mean different things.
-     Configuration values can be adapted changed by other blocks, or by a an overview tool.
+     Configuration values can be adapted by other blocks or by a an overview tool.
      The changes can be made *during* execution.
    - metadata [[file:img/parts/microblock_meta-data.png]]
      The metadata represents the formal semantics of the microblock. It consists of the following three values.
