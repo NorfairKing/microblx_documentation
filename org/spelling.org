@@ -10,7 +10,7 @@ The 'u' is an ASCII version of the greek µ for 'micro'.
 *** Blocks
     A microblock is anything conforming to the generic microblock meta-model.
 
-    A cblock, iblock or sblock is defined as any microblock conforming to the respective cblcok, iblock or sblock meta-model.
+    A cblock, iblock or sblock is defined as any microblock conforming to the respective cblock, iblock or sblock meta-model.
 
 ** Abbreviations
 #+CAPTION: Basic abbreviations
