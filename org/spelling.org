@@ -3,7 +3,9 @@
 The metamodel is called 'microblx'.
 It's not called Microblocks, microblcks, ublcks or anything alongs those lines.
 
-The standard implementation is called 'ubx'.
+The standard implementation is also called 'microblx'.
+
+In software variables, 'microblx' is sometimes called 'ubx'.
 The 'u' is an ASCII version of the greek µ for 'micro'.
 
 
